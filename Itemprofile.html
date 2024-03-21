@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/itemForm.css">
+  <title>User Profile</title>
+</head>
+<body>
+  <h1>Your Item Details</h1>
+  <div>
+    <p><strong>TITLE:</strong> <span id="displayTITLE"></span></p>
+    <p><strong>Photo:</strong> <span id="displayPhoto"></span></p>
+    <p><strong>ITEM CATEGORY:</strong> <span id="displayCATEGORY"></span></p>
+    <p><strong>Size:</strong> <span id="displaySize"></span></p>
+    <p><strong>Brand:</strong> <span id="displayBrand"></span></p>
+    <p><strong>Theme:</strong> <span id="displayTheme"></span></p>
+    <p><strong>Country/Region of Manufacture:</strong> <span id="displayRegion"></span></p>
+    <p><strong>Material:</strong> <span id="displayMaterial"></span></p>
+    <p><strong>Item condition:</strong> <span id="displaycondition"></span></p>
+    <p><strong>Item Description:</strong> <span id="displayDescription"></span></p>
+    <p><strong>Price:</strong> <span id="displayPrice"></span></p>
+    <p><strong>Quantity:</strong> <span id="displayQuantity"></span></p>
+    <p>Location</p>
+    <p><strong>Province:</strong> <span id="displayProvince"></span></p>
+    <p><strong>District:</strong> <span id="displayDistrict"></span></p>
+    <p><strong>City:</strong> <span id="displayCity"></span></p>
+    <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+    
+  </div>
+  <button class="back-button" name="list" id="listButton">Edit</button>
+  <button  name="list" id="listButton">List and back to Home</button>
+  <script src="js/itemForm.js"></script>
+  
+  <script>
+    const backButton = document.querySelector('.back-button');
+
+    backButton.addEventListener('click', () => {
+        history.back();
+    });
+  </script>
+
+</body>
+</html>

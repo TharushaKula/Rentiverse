@@ -1,0 +1,16 @@
+document.getElementById("displayPhoto").textContent = localStorage.getItem("imageUpload");
+document.getElementById("displayTITLE").textContent = localStorage.getItem("titleBox");
+document.getElementById("displayCATEGORY").textContent = localStorage.getItem("categoryBox");
+document.getElementById("displaySize").textContent = localStorage.getItem("sizeBox");
+document.getElementById("displayBrand").textContent = localStorage.getItem("brandBox");
+document.getElementById("displayTheme").textContent = localStorage.getItem("themeBox");
+document.getElementById("displayRegion").textContent = localStorage.getItem("countryBox");
+document.getElementById("displayMaterial").textContent = localStorage.getItem("materialBox");
+document.getElementById("displaycondition").textContent = localStorage.getItem("conditionBox");
+document.getElementById("displayDescription").textContent = localStorage.getItem("desBox");
+document.getElementById("displayPrice").textContent = localStorage.getItem("priceBox");
+document.getElementById("displayQuantity").textContent = localStorage.getItem("quantityBox");
+document.getElementById("displayProvince").textContent = localStorage.getItem("provinceBox");
+document.getElementById("displayDistrict").textContent = localStorage.getItem("districtBox");
+document.getElementById("displayCity").textContent = localStorage.getItem("cityBox");
+document.getElementById("displayAddress").textContent = localStorage.getItem("addressBox");

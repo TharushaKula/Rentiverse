@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Form</title>
+    <link rel="stylesheet" href="css/itemForm.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="js/itemForm.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+             <div class="hamburger-lines">
+                <i class="bi bi-list"></i>
+            </div>
+            <ul class="menu-items">
+                <li><a href="main2.html">Home</a></li>
+                <li><a href="search.html">Explore</a></li> 
+                <li>
+                    <a href="">How it works</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rent_items.html">Items</a></li>
+                        <li><a href="rent_services.html">Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="myAccount.html">Profile</a></li>
+                <a href="cart.html">
+                  <i class="bi bi-cart" id="cart-icon"></i>
+              </a>
+              </ul>
+              <img src="Images/Rentiverse logo.png" class="logo">
+       </div>
+  </nav>
+
+    <div>
+        <br><br>
+        <div class="content">
+        <div>
+            <p id="headingOne"><b>Complete your listing</b></p>
+            <p id="headingTwo">PHOTOS & VIDEO <img src="Images/icon.png" alt=""></p>
+            <p id="headingThree">0 of 24 photos</p>
+
+            
+        </div>
+        <br><br>
+        <div>
+            <form id="userForm">
+                <div id="boxContainer">
+                    <div>
+                    <p class="boxOne" id="imageDropBox">
+                        <label for="imageUpload" class="imageInputLabel">
+                        <img src="Images/photo_upload.png" alt=""><br>Upload Photos </p>
+                        </label>
+    
+                        <input type="file" id="imageUpload" class="imageInput" accept="image/*">
+                    </div>
+                </div>
+                <p id="title"><b>TITLE</b></p>
+                <label for="itemTitle" id="item"><b>Item title</b></label><br>
+                <input type="text" name="itemTitle" id="titleBox" required><br><br>
+
+                <p id="category"><b>ITEM CATEGORY</b></p>
+                <label for="category" id="lots"><b>Mixied Lots</b></label>
+                <p id="desc1">in Clothing, Shoes & Accessories > Specialty</p>
+                <input type="text" name="category" id="categoryBox" required>
+                <br><br>
+
+                <p id="specifics"><b>ITEM SPECIFICS</b></p>
+                <p id="optional"><b>Additional (optional)</b></p>
+                <p id="details">Buyers also search for these details</p>
+                <br><br>
+
+                <label for="size" id="size"><b>Size</b></label>
+                <input type="text" name="size" id="sizeBox">
+                <p id="desc2">Frequently selected : Carter's Multiples</p>
+                <br><br>
+
+                <label for="brand" id="brand"><b>Brand</b></label>
+                <input type="text" name="brand" id="brandBox">
+                <p id="desc3">Frequently selected : Carter's Multiples</p>
+                <br><br>
+
+                <label for="theme" id="theme"><b>Theme</b></label>
+                <input type="text" name="theme" id="themeBox">
+                <p id="desc4">Frequently selected : Winter</p>
+                <br><br>
+
+                <label for="country" id="country"><b>Country/Region of Manufacture</b></label>
+                <input type="text" name="country" id="countryBox">
+                <p id="desc5">Frequntly selected : China</p>
+                <br><br>
+
+                <label for="material" id="material"><b>Material</b></label>
+                <input type="text" name="material" id="materialBox">
+                <p id="desc6">Frequently selected : Polyester, Cotton blend</p>
+                <br><br>
+
+                <p id="condition"><b>CONDITION</b></p>
+                <label for="condition" id="itemCon"><b>Item condition</b></label><br>
+                <input type="text" name="condition" id="conditionBox" required>
+                <br><br>
+
+                <p id="description"><b>DESCRIPTION</b></p><br>
+                <div>
+                <p id="mark"><img src="Images/mark.png"></p>
+                </div>
+                <div>
+                <p id="sentence"><b>Provide a description for your item. Tell renter about unique features, and/or why you are renting it.</b></p>
+                </div>
+                <br><br>
+                
+                <textarea name="description" id="desBox" cols="163" rows="20" placeholder="Add text...." required></textarea>
+                <br><br>
+                <p id="pricing"><b>PRICING</b></p>
+                <label for="Price" id="price"><b>Price</b></label><br>
+                <input type="text" name="price" placeholder="Rs." id="priceBox" required>
+                <br><br>
+                <label for="quantity" id="quantity"><b>Quantity</b></label><br>
+                <input type="text" name="quantity" id="quantityBox" required>
+                <br><br>
+
+                <p id="location"><b>LOCATION</b></p>
+                <p id="details1"><b>Tell your loaction to the renter</b></p><br>
+                <label for="province" id="province"><b>Province</b></label>
+                <input type="text" name="province" id="provinceBox" required><br>
+                <br><br>
+                <label for="district" id="district"><b>District</b></label>
+                <input type="text" name="district" id="districtBox" required><br>
+                <br><br>
+                <label for="city" id="city"><b>City</b></label>
+                <input type="text" name="city" id="cityBox" required><br>
+                <br><br>
+                <label for="address" id="address"><b>Address</b></label>
+                <input type="text" name="address" id="addressBox" required><br>
+                <br><br><br>
+                <p id="free"><b>List it for free.</b></p>
+
+                <div class="buttons">
+                    <button type="submit" name="list" id="listButton"><b>List it</b></button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <svg viewBox="0 0 120 28">
+         <defs> 
+             <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </defs> 
+           <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+           <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+           <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+        </svg>
+        <div class="footer-content">
+            <h1 class="p1">RENTIVERSE</h1>
+            <button class="footer-content-button">Contact Us</button>
+            <div class="vertical-1"></div>
+            <div class="footer-options-1">
+                <a href=>HOME</a><br><br>
+                <a href=>EXPLORE</a><br><br>
+                <a href=>HOW IT WORKS</a><br><br>
+                <a href=>ABOUT US</a>
+            </div>
+            <div class="vertical-2"></div>
+            <div class="footer-options-2">
+                <a href=>TERM OF SERVICE</a><br><br>
+                <a href=>FAQs</a>
+            </div>
+            <div class="vertical-3"></div>
+            <div class="footer-options-3">
+                <a href=""><i class="bi bi-facebook"></i></a><br><br>
+                <a href=""><i class="bi bi-instagram"></i></a><br><br>
+                <a href=""><i class="bi bi-twitter"></i></a><br><br>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/Itemscript.js"></script>
+</body>
+</html>

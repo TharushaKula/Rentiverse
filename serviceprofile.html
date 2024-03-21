@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/serviceForm.css">
+  <title>User Profile</title>
+</head>
+<body>
+  <h1>Your Service Details</h1>
+  <div>
+    <p><strong>TITLE:</strong> <span id="displayTITLE"></span></p>
+    <p><strong>Service category:</strong> <span id="displayCATEGORY"></span></p>
+    <p><strong>Service Experience:</strong> <span id="displayExperience"></span></p>
+    <p><strong>Service Qualification:</strong> <span id="displayQualification"></span></p>
+    <p><strong>Service Description:</strong> <span id="displayDescription"></span></p>
+    <p><strong>Price:</strong> <span id="displayPrice"></span></p>
+    <p>Location</p>
+    <p><strong>Province:</strong> <span id="displayProvince"></span></p>
+    <p><strong>District:</strong> <span id="displayDistrict"></span></p>
+    <p><strong>City:</strong> <span id="displayCity"></span></p>
+    <p><strong>Address:</strong> <span id="displayAddress"></span></p>
+    
+  </div>
+  <button class="back-button" name="list" id="listButton">Edit</button>
+  <button  name="list" id="listButton">List and back to Home</button>
+  <script src="js/serviceForm.js"></script>
+  <script>
+    const backButton = document.querySelector('.back-button');
+
+    backButton.addEventListener('click', () => {
+        history.back();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/all.css">
+        <link rel="stylesheet" type="text/css" href="css/details.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                 <div class="hamburger-lines">
+                    <i class="bi bi-list"></i>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="main2.html">Home</a></li>
+                    <li><a href="search.html">Explore</a></li> 
+                    <li>
+                        <a href="">How it works</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rent_items.html">Items</a></li>
+                            <li><a href="rent_services.html">Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="myAccount.html">Profile</a></li>
+                    <a href="cart.html">
+                      <i class="bi bi-cart" id="cart-icon"></i>
+                  </a>
+                  </ul>
+                  <img src="Images/Rentiverse logo.png" class="logo">
+           </div>
+      </nav>
+        <h3 class="tagline">Select the location where your item is located</h3>
+        <div>
+        <form>
+            <div class="form-optional">
+                <h5 id="form-optional-tag">Having trouble</h5>
+                <div id="form-optional-but">?</div>
+            </div>
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104838.77532119637!2d79.79729947623201!3d6.919004110967983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1693037148700!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="submit-button">
+                <button id="submit-btn" class="continue"><a href="Payments.html" style="text-decoration: none; color: black;">Continue</a></button>
+            </div>
+        </form>
+        </div>
+        <footer>
+            <svg viewBox="0 0 120 28">
+             <defs> 
+                 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+              </defs> 
+               <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+               <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+               <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+            </svg>
+            <div class="footer-content">
+                <h1 class="p1">RENTIVERSE</h1>
+                <button class="footer-content-button">Contact Us</button>
+                <div class="vertical-1"></div>
+                <div class="footer-options-1">
+                    <a href=>HOME</a><br><br>
+                    <a href=>EXPLORE</a><br><br>
+                    <a href=>HOW IT WORKS</a><br><br>
+                    <a href=>ABOUT US</a>
+                </div>
+                <div class="vertical-2"></div>
+                <div class="footer-options-2">
+                    <a href=>TERM OF SERVICE</a><br><br>
+                    <a href=>FAQs</a>
+                </div>
+                <div class="vertical-3"></div>
+                <div class="footer-options-3">
+                    <a href=""><i class="bi bi-facebook"></i></a><br><br>
+                    <a href=""><i class="bi bi-instagram"></i></a><br><br>
+                    <a href=""><i class="bi bi-twitter"></i></a><br><br>
+                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            </footer>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var button = document.getElementById("submit-btn");
+            
+                    // Add a click event listener to the element
+                    button.addEventListener("click", function() {
+                        // Redirect to another HTML page
+                        window.location.href = "Payments.html";
+                    });
+                });
+            </script>
+            
+    </body>
+</html>

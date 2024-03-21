@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/all.css">
+        <link rel="stylesheet" type="text/css" href="css/sharer_verify.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                 <div class="hamburger-lines">
+                    <i class="bi bi-list"></i>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="main2.html">Home</a></li>
+                    <li><a href="search.html">Explore</a></li> 
+                    <li>
+                        <a href="">How it works</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rent_items.html">Items</a></li>
+                            <li><a href="rent_services.html">Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="myAccount.html">Profile</a></li>
+                    <a href="cart.html">
+                      <i class="bi bi-cart" id="cart-icon"></i>
+                  </a>
+                  </ul>
+                  <img src="Images/Rentiverse logo.png" class="logo">
+           </div>
+      </nav>
+        
+        <h3 class="tagline">You must complete Sharer Verification to list an item</h3>
+        <h4 id="tag-1">For Sharers</h4>
+        <h4 id="tag-2">Required to list items, you must be verified first</h4>
+        <div class="ver_body">
+            <div class="verify_body">
+                <div class="verify_bar">
+                    <svg width="50" height="700" xmlns="http://www.w3.org/2000/svg">
+                        
+                        <circle class="c1" cx="20" cy="50" r="20" fill="#ccc" />
+                        <line class="c1" x1="20" y1="50" x2="20" y2="250" stroke="#ccc" stroke-width="20"  />
+                        <circle class="c2" cx="20" cy="250" r="20" fill="#ccc" />
+                        <line class="c2" x1="20" y1="250" x2="20" y2="450" stroke="#ccc" stroke-width="20"  />
+                        <circle class="c3" cx="20" cy="450" r="20" fill="#ccc" />
+                        <line class="c3" x1="20" y1="450" x2="20" y2="650" stroke="#ccc" stroke-width="20"  />
+                        <circle class="c3" cx="20" cy="650" r="20" fill="#ccc" />
+                        <image x="5" y="35" width="30" height="30" href="Images/fingerprint.png" />
+                        <image x="5" y="235" width="30" height="30" href="Images/add.png" />
+                        <image x="5" y="435" width="30" height="30" href="Images/bank.png" />
+                        <image x="5" y="635" width="30" height="30" href="Images/cash.png" />
+                    </svg>
+                </div>
+                <div class="verfy_details">
+                    <div class="verify_things">
+                        <p class="tags">Get verified with Stripe</p>
+                        <p class="cont">Add your photo ID & take a photo of yourself to confirm its you</p>
+                        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                        <div class="submit-button" id="verifyButton">Verify</div>
+                    </div>
+                        <div class="product-container" id="product-container-ne">
+                            <div class="closebutton" onclick="closeNE()">X</div>
+                            <form>
+                                <label for="fname">Full name:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="address">Address:</label><br>
+                                <input type="text" id="address" name="address">
+                                <div class="submit-button" id="add-details" onclick="verifyAndClose()">Verify</div>
+                              </form>
+
+                        </div>   
+                    <div class="verify_things">
+                        <p class="tags">Address and Account Details</p>
+                        <p class="cont">Tell us your name & address so wecan confirm this against your ID</p>
+                        <div class="submit-button" id="change-details" onclick="NeShow()">Add</div>
+                    </div>
+                    <div class="verify_things">
+                        <p class="tags">Bank Details</p>
+                        <p class="cont">Where you want to get paid into you can come back and edit these details whenever you want</p>
+                        <input type="text" id="bank1" name="bank1" pattern="[0-9]*" placeholder="Account No" oninput="checkInput(this)">
+                        <input type="text" id="bank2" name="bank2" placeholder="Account Branch"><br>
+                        <div class="submit-button" id="bank-verify">Connect Bank Account</div>
+                    </div>
+                    <div class="verify_things">
+                        <p class="tags">Start earning!</p>
+                        <p class="cont">You're all set to start listing items as a sharer on Rentiverse!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button_show">
+                <div class="submit-button1">Skip</div>
+                <div class="submit-button1" id="submit-button1">Continue</div>
+            </div>
+        </div>
+        <script>
+            var t1=0;
+            var t2=0;
+            function checkInput(input) {
+            const value = input.value;
+            const numericValue = value.replace(/[^0-9]/g, ''); 
+            input.value = numericValue;
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+            const verifyButton = document.getElementById('verifyButton');
+            const imageInput = document.getElementById('imageInput');
+
+            verifyButton.addEventListener('click', function () {
+                imageInput.click();
+            });
+
+            imageInput.addEventListener('change', function () {
+                if (imageInput.files.length > 0) {
+                    const uploadedImage = imageInput.files[0];
+                    verifyButton.textContent = 'Change Image';
+                    const circles = document.querySelectorAll('.c1');
+                    circles.forEach(circle => {
+                    circle.setAttribute('fill', '#7AE582');
+                    circle.setAttribute('stroke', '#7AE582');
+                    t1=1;
+                    });
+                }
+            });
+        });
+        function verifyAndClose() {
+        
+            const fullNameInput = document.getElementById('fname');
+            const addressInput = document.getElementById('address');
+
+            const fullName = fullNameInput.value;
+            const address = addressInput.value;
+
+            if (fullName.trim() === '' || address.trim() === '') {
+                alert('Please fill in both Full name and Address.');
+            } else {
+                closeNE();
+                const changeDetailsButton = document.getElementById('change-details');
+                changeDetailsButton.textContent = 'Change Details'; 
+                const circles = document.querySelectorAll('.c2');
+                circles.forEach(circle => {
+                circle.setAttribute('fill', '#7AE582');
+                circle.setAttribute('stroke', '#7AE582');
+                t2=1;
+                });
+            }
+        }
+            let NE=document.getElementById("product-container-ne")
+            function NeShow(){
+                if(!t1==1){
+                    alert('You Must Complete the Photo Verification');
+                }
+                else{
+                    NE.id="product-container-ne-show";
+                }
+                
+            }
+            function closeNE(){
+                NE.id="product-container-ne";
+            }
+            const bank1Input = document.getElementById('bank1');
+            const bank2Input = document.getElementById('bank2');
+            const bankVerifyButton = document.getElementById('bank-verify');
+
+            bankVerifyButton.addEventListener('click', () => {
+                if(!t2==1){
+                    alert('You Must Complete Your Personal Info. Verification');
+                }
+                else{
+                const bank1Value = bank1Input.value.trim();
+                const bank2Value = bank2Input.value.trim();
+
+                if (bank1Value === '' || bank2Value === '') {
+                alert('Enter valid bank details');
+                } else {
+                    const changeBankButton = document.getElementById('bank-verify');
+                    changeBankButton.textContent = 'Change Bank Details'; 
+                    const circles = document.querySelectorAll('.c3');
+                    circles.forEach(circle => {
+                    circle.setAttribute('fill', '#7AE582');
+                    circle.setAttribute('stroke', '#7AE582');
+                });
+                }
+                }
+                
+            });
+        </script>   
+        <footer>
+            <svg viewBox="0 0 120 28">
+             <defs> 
+                 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+              </defs> 
+               <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+               <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+               <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+            </svg>
+            <div class="footer-content">
+                <h1 class="p1">RENTIVERSE</h1>
+                <button class="footer-content-button">Contact Us</button>
+                <div class="vertical-1"></div>
+                <div class="footer-options-1">
+                    <a href=>HOME</a><br><br>
+                    <a href=>EXPLORE</a><br><br>
+                    <a href=>HOW IT WORKS</a><br><br>
+                    <a href=>ABOUT US</a>
+                </div>
+                <div class="vertical-2"></div>
+                <div class="footer-options-2">
+                    <a href=>TERM OF SERVICE</a><br><br>
+                    <a href=>FAQs</a>
+                </div>
+                <div class="vertical-3"></div>
+                <div class="footer-options-3">
+                    <a href=""><i class="bi bi-facebook"></i></a><br><br>
+                    <a href=""><i class="bi bi-instagram"></i></a><br><br>
+                    <a href=""><i class="bi bi-twitter"></i></a><br><br>
+                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            </footer>
+            <script>
+                var button = document.getElementById("submit-button1");
+
+                // Add a click event listener to the element
+                button.addEventListener("click", function() {
+                    // Redirect to another HTML page
+                    window.location.href = "myAccount.html";
+                });
+            </script>
+    </body>
+</html>

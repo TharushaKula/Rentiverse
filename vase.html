@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vase</title>
+    <link rel="stylesheet" href="css/Home & Life Style/vase.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+             <div class="hamburger-lines">
+                <i class="bi bi-list"></i>
+            </div>
+            <ul class="menu-items">
+                <li><a href="main2.html">Home</a></li>
+                <li><a href="search.html">Explore</a></li> 
+                <li>
+                    <a href="">How it works</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rent_items.html">Items</a></li>
+                        <li><a href="rent_services.html">Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="myAccount.html">Profile</a></li>
+                <a href="cart.html">
+                  <i class="bi bi-cart" id="cart-icon"></i>
+              </a>
+              </ul>
+              <img src="Images/Rentiverse logo.png" class="logo">
+       </div>
+  </nav>
+    <div class="options">
+        <li>
+            <ul><a href="catergories-pets.html">Pets</a></ul>
+            <ul><a href="catergories-musicalInstruments.html">Musical Instruments</a></ul>
+            <ul><a href="catergories-heavyMachinery.html">Heavy Machinery</a></ul>
+            <ul><a href="catergories-apparel.html">Apparel</a></ul>
+            <ul><a href="catergories-accessories.html">Accessories</a></ul>
+            <ul><a href="electronic.html">Electronics</a></ul>
+            <ul><a href="items.html">Home and Lifestyle</a></ul>
+            <ul><a href="catergories-sportsAnd Recreation.html">Sports and Recreation</a></ul>
+        </li>
+        <hr>
+        <div class="options-2">
+            <p class="p1"><i class="bi bi-house-door"></i> / Items / Home & Life Style</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-img">
+            <img src="Images/Home and Life Style/vase.png" alt="" width="700px" height="750px">
+        </div>
+        <div class="product-details">
+            <p class="p2"> Swirl Vase Flower Vase Ornamental Vase</p>
+            <p class="p3">by: Sayuni <a href="" style="color: blue; text-decoration: none;">View Profile</a></p>
+            <p class="p4"><i class="bi bi-geo-alt-fill"></i>Athurugiruya, Colombo</p>
+            <p class="p5">Rs 650/Day</p>
+            <p class="p6">Total number Available: 4</p>
+            <p class="p7">Stay cool on the go with our Portable Fan designed for the DeWalt 20V MAX Li-Ion Battery DCB200 Cordless series. Beat the heat and stay comfortable during your work or leisure activities with this compact and efficient fan. Powered by the same battery that drives your tools, it offers unmatched convenience. Whether you're on a job site, camping, or just relaxing at home, this fan provides a refreshing breeze wherever you need it.</p>
+            <p class="p8"><input type="text">No of item(s) to be rented</p>
+            <p class="p9">Booking Date <br>
+            <input type="date" name="" id="bookingDate" required></p>
+            <p class="p10">Return Date <br>
+            <input type="date" name="" id="returnDate" required></p>
+            <p class="p11"><input type="checkbox" name="" id="" required> Agree to Rentor's Policy / <a href="" style="color: rgb(26, 194, 26); text-decoration: none;">Read Policy</a>
+            <div class="product-buttons">
+                <button class="cart-button" onclick="addToCart()">Add to Cart</button>
+                <button class="rent-now">Rent Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-box" id="popupBox">
+        <div class="popup-content">
+            <span class="close-icon" id="closePopup">&times;</span>
+            <p>Item added to cart successfully!</p>
+        </div>
+    </div>
+    <div class="reviews-section">
+        <h1>Reviews on this product</h1>
+        <div class="review">
+            <div class="review-1">
+                <img src="Images/userImages/user-11.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Kamali</p>
+            </div>
+            <p class="p13">The Swirl Vase isn't merely a vessel for flowers; it's an embodiment of grace that has become an integral part of my home. Its understated elegance seamlessly fits into any setting, while its transformative ability to turn the ordinary into the extraordinary is unparalleled. With a quiet sophistication, it captures attention and imparts a sense of timeless beauty. Whether adorning my table with vibrant blooms or standing solo as a sculptural piece, it never fails to provoke admiration. The marriage of its aesthetic allure and functional purpose is a triumph of design. It doesn't just hold flowers; it cradles emotions, memories, and an appreciation for the finer things in life.</p>
+        </div>
+        <div class="review" style="height: 200px;">
+            <div class="review-1">
+                <img src="Images/userImages/user-5.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Chamath</p>
+            </div>
+            <p class="p13">The Swirl Vase has seamlessly woven its way into the very fabric of my home's aesthetic. Beyond its functional role as a flower vase, it stands as a testament to artistic brilliance and tasteful sophistication. The unique design never fails to draw the admiring gaze of guests, serving as a conversation starter and an object of beauty. Whether showcasing a vibrant bouquet or standing unadorned, it effortlessly bridges the gap between utility and art. More than a vase, it's a daily affirmation of the beauty that can reside in simplicity.</p>
+        </div>
+        <div class="review"style="height: 260px;">
+            <div class="review-1">
+                <img src="Images/userImages/user-12.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Manumi</p>
+            </div>
+            <p class="p13">From the moment I introduced the Swirl Vase into my living space, its impact was nothing short of transformative. Its design, a union of delicate craftsmanship and ingenious aesthetics, took center stage as a statement piece that commands attention. The interplay of light and form is a mesmerizing spectacle, enhancing the room's ambiance and imparting a sense of refined elegance. What's remarkable is its versatility – whether graced with a bouquet that breathes life into a room or left standing alone to exude minimalist charm, it invariably succeeds in elevating the environment. Its silent yet profound presence is a reminder of the magic that can be woven with the simplest of elements.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <svg viewBox="0 0 120 28">
+         <defs> 
+             <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </defs> 
+           <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+           <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+           <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+        </svg>
+        <div class="footer-content">
+            <h1 class="p1">RENTIVERSE</h1>
+            <button class="footer-content-button">Contact Us</button>
+            <div class="vertical-1"></div>
+            <div class="footer-options-1">
+                <a href=>HOME</a><br><br>
+                <a href=>EXPLORE</a><br><br>
+                <a href=>HOW IT WORKS</a><br><br>
+                <a href=>ABOUT US</a>
+            </div>
+            <div class="vertical-2"></div>
+            <div class="footer-options-2">
+                <a href=>TERM OF SERVICE</a><br><br>
+                <a href=>FAQs</a>
+            </div>
+            <div class="vertical-3"></div>
+            <div class="footer-options-3">
+                <a href=""><i class="bi bi-facebook"></i></a><br><br>
+                <a href=""><i class="bi bi-instagram"></i></a><br><br>
+                <a href=""><i class="bi bi-twitter"></i></a><br><br>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+        </footer>
+
+
+
+
+    
+<script src="js/home&lifestyle/vase.js"></script>    
+</body>
+</html>

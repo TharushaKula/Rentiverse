@@ -1,0 +1,89 @@
+.tagline{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+form{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition:all 0.5s ease;
+    border: 1px solid #ebecf0;
+    background-color: rgba(255,255,255,0.8);
+}
+form label{
+    text-align: left;
+    width: 80%; 
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+form input[type="text"],form input[type="email"], form input[type="password"]{
+    width: 80%;
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.form-optional {
+    display: flex;
+    align-items: right;
+    margin-left: 80%;
+    width: 80%;
+}
+
+#form-optional-tag {
+    margin: 0;
+    margin-right: 10px;
+}
+
+#form-optional-but {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.terms {
+    text-align: center;
+    margin: 20px 0;
+    color: #000;
+}
+
+.terms a {
+    color: #2d6ebd;
+    text-decoration: none;
+}
+
+.submit-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#submit-btn {
+    background-color: #7AE582;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #7AE582;
+}
+
+#submit-btn:hover {
+    color: #7AE582;
+    background-color: #fff;
+}
+

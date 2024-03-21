@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quesadilla</title>
+    <link rel="stylesheet" href="css/Home & Life Style/quesadilla.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+             <div class="hamburger-lines">
+                <i class="bi bi-list"></i>
+            </div>
+            <ul class="menu-items">
+                <li><a href="main2.html">Home</a></li>
+                <li><a href="search.html">Explore</a></li> 
+                <li>
+                    <a href="">How it works</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rent_items.html">Items</a></li>
+                        <li><a href="rent_services.html">Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="myAccount.html">Profile</a></li>
+                <a href="cart.html">
+                  <i class="bi bi-cart" id="cart-icon"></i>
+              </a>
+              </ul>
+              <img src="Images/Rentiverse logo.png" class="logo">
+       </div>
+  </nav>
+    <div class="options">
+        <li>
+            <ul><a href="catergories-pets.html">Pets</a></ul>
+            <ul><a href="catergories-musicalInstruments.html">Musical Instruments</a></ul>
+            <ul><a href="catergories-heavyMachinery.html">Heavy Machinery</a></ul>
+            <ul><a href="catergories-apparel.html">Apparel</a></ul>
+            <ul><a href="catergories-accessories.html">Accessories</a></ul>
+            <ul><a href="electronic.html">Electronics</a></ul>
+            <ul><a href="items.html">Home and Lifestyle</a></ul>
+            <ul><a href="catergories-sportsAnd Recreation.html">Sports and Recreation</a></ul>
+
+        </li>
+        <hr>
+        <div class="options-2">
+            <p class="p1"><i class="bi bi-house-door"></i> / Items / Home & Life Style</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-img">
+            <img src="Images/Home and Life Style/quesadilla.png" alt="">
+        </div>
+        <div class="product-details">
+            <p class="p2">Hamilton Beach 25409 Quesadilla Maker</p>
+            <p class="p3">by: Imeth <a href="" style="color: blue; text-decoration: none;">View Profile</a></p>
+            <p class="p4"><i class="bi bi-geo-alt-fill"></i>Wattala, Colombo</p>
+            <p class="p5">Rs 1000/Day</p>
+            <p class="p6">Total number Available: 1</p>
+            <p class="p7">Elevate your Mexican cuisine game with the Hamilton Beach 25409 Quesadilla Maker. This kitchen essential delivers perfectly crispy and cheesy quesadillas in minutes. Its user-friendly design and nonstick surface make cooking a breeze, and the compact size ensures it's a versatile addition to any kitchen. Say hello to quesadilla perfection!</p>
+            <p class="p8"><input type="text">No of item(s) to be rented</p>
+            <p class="p9">Booking Date <br>
+            <input type="date" name="" id="bookingDate" required></p>
+            <p class="p10">Return Date <br>
+            <input type="date" name="" id="returnDate" required></p>
+            <p class="p11"><input type="checkbox" name="" id="" required> Agree to Rentor's Policy / <a href="" style="color: rgb(26, 194, 26); text-decoration: none;">Read Policy</a>
+            <div class="product-buttons">
+                <button class="cart-button" onclick="addToCart()">Add to Cart</button>
+                <button class="rent-now">Rent Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-box" id="popupBox">
+        <div class="popup-content">
+            <span class="close-icon" id="closePopup">&times;</span>
+            <p>Item added to cart successfully!</p>
+        </div>
+    </div>
+    <div class="reviews-section">
+        <h1>Reviews on this product</h1>
+        <div class="review">
+            <div class="review-1">
+                <img src="Images/userImages/user-15.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Methara</p>
+            </div>
+            <p class="p13">The Hamilton Beach Quesadilla Maker has become a star in my kitchen. Its ability to whip up delicious, crispy quesadillas in minutes is a game-changer. The nonstick surface ensures easy cooking and cleanup, while the compact size is a boon for storage. From busy weeknight dinners to impromptu gatherings, it never disappoints. It's a kid-friendly solution that has even made its way into my party menu. Hamilton Beach's attention to detail is evident, and this appliance is a testament to their commitment to convenience and quality. If you're a quesadilla enthusiast like me, this maker is a must-have for creating restaurant-worthy treats at home.</p>
+        </div>
+        <div class="review" style="height: 200px;">
+            <div class="review-1">
+                <img src="Images/userImages/user-2.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Ishini</p>
+            </div>
+            <p class="p13">The Hamilton Beach Quesadilla Maker has revolutionized my snack game. It's simplicity at its finest – the nonstick surface guarantees hassle-free cooking and easy cleanup. In a matter of minutes, I can indulge in perfectly golden and cheesy quesadillas. The compact size is a bonus for my limited kitchen space. It's a versatile addition that caters to impromptu cravings or quick snacks. Hamilton Beach's reputation for reliability is evident in this appliance. If you're seeking a convenient way to up your quesadilla game, this maker is a worthwhile investment.</p>
+        </div>
+        <div class="review"style="height: 260px;">
+            <div class="review-1">
+                <img src="Images/userImages/user-11.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Chamari</p>
+            </div>
+            <p class="p13">The Hamilton Beach Quesadilla Maker is my culinary lifesaver. Its fast and efficient operation has earned it a permanent spot on my countertop. The nonstick surface ensures fuss-free cooking, and the compact design is perfect for my kitchen. From satisfying solo lunches to sharing snacks with friends, it's a versatile addition that never fails to impress. Hamilton Beach's commitment to practicality shines through in this appliance. It's a must-have for anyone seeking a quick and delicious solution to quesadilla cravings. If you want to add a touch of fun and convenience to your cooking routine, this maker is an ideal choice.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <svg viewBox="0 0 120 28">
+         <defs> 
+             <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </defs> 
+           <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+           <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+           <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+        </svg>
+        <div class="footer-content">
+            <h1 class="p1">RENTIVERSE</h1>
+            <button class="footer-content-button">Contact Us</button>
+            <div class="vertical-1"></div>
+            <div class="footer-options-1">
+                <a href=>HOME</a><br><br>
+                <a href=>EXPLORE</a><br><br>
+                <a href=>HOW IT WORKS</a><br><br>
+                <a href=>ABOUT US</a>
+            </div>
+            <div class="vertical-2"></div>
+            <div class="footer-options-2">
+                <a href=>TERM OF SERVICE</a><br><br>
+                <a href=>FAQs</a>
+            </div>
+            <div class="vertical-3"></div>
+            <div class="footer-options-3">
+                <a href=""><i class="bi bi-facebook"></i></a><br><br>
+                <a href=""><i class="bi bi-instagram"></i></a><br><br>
+                <a href=""><i class="bi bi-twitter"></i></a><br><br>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+        </footer>
+
+
+
+
+    
+<script src="js/home&lifestyle/quesadilla.js"></script>    
+</body>
+</html>

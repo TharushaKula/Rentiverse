@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <div class="loginContainer">
+        <div class="loginHalf">
+            <div class="loginForm">
+                <p id="topic"><b>Hi There!</b></p>
+                <p id="welcome"><b>Welcome to Rentiverse.</b></p>
+                <br>
+                <form>
+                    <div class="googleLogin">
+                        <button type="button" name="" id=""><img src="Images/google.png" alt=""><b>Log in with Google</b></button>
+                    </div>
+                    <div class="lines">
+                        <span class="or">or</span>
+                    </div>
+                    <div class="boxes">
+                        <input type="email" name="email" placeholder="Email" id="" required>
+                        <br><br>
+                        <input type="password" name="password" placeholder="Password" id="" required>
+                        <br>
+                        <a href="#"><b>Forgot password?</b></a>
+                    </div>
+                    <br>
+                    <div class="login">
+                        <button type="submit" id="alertButton"><b>Login</b></button>
+                        <br>
+                        <p id=""><b>Don't have an account?</b><a href="details.html"> <b>Sign Up</b> </a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="imageHalf">
+            <p class="text-over-image">"Rent, Share, Earn: Unleash <br> Your Possessions, Explore <br> Your Needs"</p> 
+            <img src="Images/login.png" alt="">
+        </div>
+
+    </div>
+
+    <script>
+    // Get a reference to the button element using its id
+    const alertButton = document.getElementById('alertButton');
+
+    // Add a click event listener to the button
+    alertButton.addEventListener('click', function() {
+    // When the button is clicked, show an alert
+    alert('Account cannot be found! Please sign up!');
+    window.location.href = 'details.html';
+});
+
+</script>
+
+
+</body>
+</html>

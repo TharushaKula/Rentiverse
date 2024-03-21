@@ -1,0 +1,64 @@
+.tagline{
+    font-size: 50px;
+    margin-left: 10%;
+}
+.tag-para{
+    font-size: 20px;
+    color: #676363;
+    margin-left: 10%;
+    width: 35%;
+}
+.bef-rent{
+    position: absolute;
+    top:60%;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.tr-rent{
+    position: absolute;
+    top:120%;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.rent-image{
+    margin-right: 300px;
+}
+.red-names{
+    color: red;
+}
+.blue-tags, .blue-det{
+    color: rgb(8, 8, 99);
+}
+#as{
+    margin-bottom: 600px;
+}
+.submit-button {
+    text-align: center;
+    margin: 20px 50px;
+    background-color: #7AE582;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 20%;
+    border: 2px solid #7AE582;;
+}
+
+.submit-button:hover {
+    color: #7AE582;
+    background-color: #fff;
+}
+.message{
+    position: absolute;
+    top: 190%;
+    left: 15%;
+    text-align: center;
+    margin: auto;
+}
+#sss{
+    margin-left: 40%;
+}

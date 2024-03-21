@@ -1,0 +1,139 @@
+
+.tagline{
+    font-size: 20px;
+    text-align: center;
+}
+#tag-1{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 0    ;
+}
+#tag-2{
+    font-size: 14px;
+    text-align: left;
+    margin-left: 50px;
+}
+.verify_body{
+    display: flex;
+}
+.ver_body{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition:all 0.5s ease;
+    border: 1px solid #ebecf0;
+    background-color: rgba(255,255,255,0.8);
+}
+.verify_bar {
+    width: 20%;
+    padding-left: 10%;
+}
+
+.verify_details {
+    width: 80%; 
+}
+.verify_details div{
+    width: 20%;
+}
+.tags{
+    font-size: 20px;
+}
+.cont{
+    font-size: 15px;
+}
+.submit-button {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #7AE582;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #7AE582;;
+    transition: background-color 0.3s ease;
+    
+}
+
+.submit-button:hover {
+    color: #7AE582;
+    background-color: #fff;
+}
+.submit-button1 {
+    margin-left: 10px;
+    width: 180px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #7AE582;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid #7AE582;;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button1:hover {
+    color: #7AE582;
+    background-color: #fff;
+}
+input[type="text"]{
+    width: 49%;
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.verify_things{
+    width: 80%;
+}
+.button_show{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+.product-container{
+    z-index: 999;
+    position: fixed;
+    top:40%;
+    left: 17%;
+    width: 60%;
+    height: 25%;
+    border:solid 3px #7AE582;
+    transition: 0.5s ease;
+    padding: 10px 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    
+}
+#product-container-ne{
+    visibility: none;
+    scale: 0;
+}
+#product-container-ne-show{
+    visibility: visible;
+    scale: 1;
+}
+.closebutton{
+    position: absolute;
+    top:0;
+    right: 1%;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+.closebutton:hover{
+    color:red;
+}
+form input[type="text"]{
+    width: 100%;
+}

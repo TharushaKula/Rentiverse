@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Added CSS to align container horizontally and vertically */
+body {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Set full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.loginContainer {
+    width: 940px;
+    height: 680px;
+    display: flex;
+    border-radius: 45px;
+    overflow: hidden;
+    background-color: #f0eded;
+}
+
+.loginHalf {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -150px;
+}
+
+.imageHalf {
+    width: 50%;
+    background-image: url('Images/login.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px; /* Set a fixed height for the container */
+}
+
+.text-over-image {
+    margin-top: 190px;
+    position: absolute;
+    top: 50%; /* Place it vertically centered */
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(-50%); /* Move the text up by half of its height to center it vertically */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+}
+
+
+
+#topic {
+    color: #000;
+    font-size: 64px;
+    font-weight: 900 !important;
+    font-style: normal;
+    line-height: normal;
+    margin-top: -200px;
+    text-align: center;
+}
+
+#welcome {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: -80px 0px 0px 68px;
+}
+
+.googleLogin button {
+    width: 303px;
+    height: 47px;
+    border-radius: 11px;
+    flex-shrink: 0;
+    border: 2px solid #000;
+    background-color: inherit;
+    cursor: pointer;
+    background: #d9d9d9;
+}
+
+.googleLogin :hover{
+    background-color: #cac8c8;
+}
+
+.googleLogin button img {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    margin: -20px 3px -15px -5px;
+    padding: 10px;
+}
+
+.lines {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.lines::before, .lines::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    border-top: 1px solid rgba(0, 0, 0, 0.30);
+    
+}
+
+.lines::before {
+    right: 5%;
+}
+
+.lines::after {
+    left: 5%;
+}
+
+.or {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: inherit;
+    position: relative;
+    top: -4px;
+}
+
+.boxes input {
+    width: 281px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    border:1px solid black ;
+    background: #d9d9d9;
+    padding: 0 10px;
+}
+
+.boxes a {
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 0 0 180px;
+    color: #0E7FBF;
+}
+
+.login button {
+    width: 303px;
+    height: 47px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #ffffff;
+    background-color: #000;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.login p {
+    font-size: 9px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 5px 0 0 160px;
+}
+
+.login p a {
+    text-decoration: none;
+    color: #0E7FBF;
+}
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair Set</title>
+    <link rel="stylesheet" href="css/Home & Life Style/chairSet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+             <div class="hamburger-lines">
+                <i class="bi bi-list"></i>
+            </div>
+            <ul class="menu-items">
+                <li><a href="main2.html">Home</a></li>
+                <li><a href="search.html">Explore</a></li> 
+                <li>
+                    <a href="">How it works</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rent_items.html">Items</a></li>
+                        <li><a href="rent_services.html">Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="myAccount.html">Profile</a></li>
+                <a href="cart.html">
+                  <i class="bi bi-cart" id="cart-icon"></i>
+              </a>
+              </ul>
+              <img src="Images/Rentiverse logo.png" class="logo">
+       </div>
+  </nav>
+    <div class="options">
+        <li>
+            <ul><a href="catergories-pets.html">Pets</a></ul>
+            <ul><a href="catergories-musicalInstruments.html">Musical Instruments</a></ul>
+            <ul><a href="catergories-heavyMachinery.html">Heavy Machinery</a></ul>
+            <ul><a href="catergories-apparel.html">Apparel</a></ul>
+            <ul><a href="catergories-accessories.html">Accessories</a></ul>
+            <ul><a href="electronic.html">Electronics</a></ul>
+            <ul><a href="items.html">Home and Lifestyle</a></ul>
+            <ul><a href="catergories-sportsAnd Recreation.html">Sports and Recreation</a></ul>
+
+        </li>
+        <hr>
+        <div class="options-2">
+            <p class="p1"><i class="bi bi-house-door"></i> / Items / Home & Life Style</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-img">
+            <img src="Images/Home and Life Style/chairSet.png" alt="">
+        </div>
+        <div class="product-details">
+            <p class="p2">Set of 4 / 6 Dining Chairs Padded Seat High back Metal Legs Home Furniture</p>
+            <p class="p3">by: Mahesh <a href="" style="color: blue; text-decoration: none;">View Profile</a></p>
+            <p class="p4"><i class="bi bi-geo-alt-fill"></i>Kadawatha, Colombo</p>
+            <p class="p5">Rs 2300/Day</p>
+            <p class="p6">Total number Available: 1</p>
+            <p class="p7">Upgrade your dining experience with our Set of 4/6 Dining Chairs. The perfect blend of comfort and style, these chairs feature padded seats, high backs, and sleek metal legs. Elevate your home furniture with these versatile pieces that offer ergonomic support and a modern aesthetic. Enjoy cozy meals and delightful conversations in style.</p>
+            <p class="p8"><input type="text">No of item(s) to be rented</p>
+            <p class="p9">Booking Date <br>
+            <input type="date" name="" id="bookingDate" required></p>
+            <p class="p10">Return Date <br>
+            <input type="date" name="" id="returnDate" required></p>
+            <p class="p11"><input type="checkbox" name="" id="" required> Agree to Rentor's Policy / <a href="" style="color: rgb(26, 194, 26); text-decoration: none;">Read Policy</a>
+            <div class="product-buttons">
+                <button class="cart-button" onclick="addToCart()">Add to Cart</button>
+                <button class="rent-now">Rent Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-box" id="popupBox">
+        <div class="popup-content">
+            <span class="close-icon" id="closePopup">&times;</span>
+            <p>Item added to cart successfully!</p>
+        </div>
+    </div>
+    <div class="reviews-section">
+        <h1>Reviews on this product</h1>
+        <div class="review">
+            <div class="review-1">
+                <img src="Images/userImages/user-7.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Kaushi</p>
+            </div>
+            <p class="p13">These Set of 4/6 Dining Chairs have breathed new life into my dining area. Their padded seats provide unmatched comfort, and the high back design offers excellent support, making every meal an indulgent experience. The sleek metal legs add a contemporary touch that effortlessly complements my décor. Whether it's a casual dinner or a formal gathering, these chairs elevate the ambiance and ensure everyone feels like royalty.</p>
+        </div>
+        <div class="review" style="height: 200px;">
+            <div class="review-1">
+                <img src="Images/userImages/user-11.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Ahasna</p>
+            </div>
+            <p class="p13">The Set of 4/6 Dining Chairs has transformed my dining space. The padded seats are a delight, making every meal an occasion to savor. The high back design not only offers support but also adds an air of elegance. The metal legs are a stylish addition that brings a modern touch to my dining area. These chairs have struck the perfect balance between aesthetics and comfort.</p>
+        </div>
+        <div class="review"style="height: 260px;">
+            <div class="review-1">
+                <img src="Images/userImages/user-2.png" alt="">
+                <p class="p12"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>Lakshani</p>
+            </div>
+            <p class="p13">As a home entertainer, these Set of 4/6 Dining Chairs have become invaluable to me. The padded seats are a luxurious treat for my guests, ensuring they dine in comfort and style. The high back design is a testament to ergonomic excellence, enhancing the dining experience. The metal legs offer a contemporary twist that aligns with my interior design. These chairs are more than furniture; they're an invitation to create cherished memories over delicious meals. Whether it's a festive gathering or an intimate dinner, these chairs effortlessly elevate the ambiance, making each occasion a special one.</p>
+        </div>
+    </div>
+
+    <footer>
+        <svg viewBox="0 0 120 28">
+         <defs> 
+             <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </defs> 
+           <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+           <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+           <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+        </svg>
+        <div class="footer-content">
+            <h1 class="p1">RENTIVERSE</h1>
+            <button class="footer-content-button">Contact Us</button>
+            <div class="vertical-1"></div>
+            <div class="footer-options-1">
+                <a href=>HOME</a><br><br>
+                <a href=>EXPLORE</a><br><br>
+                <a href=>HOW IT WORKS</a><br><br>
+                <a href=>ABOUT US</a>
+            </div>
+            <div class="vertical-2"></div>
+            <div class="footer-options-2">
+                <a href=>TERM OF SERVICE</a><br><br>
+                <a href=>FAQs</a>
+            </div>
+            <div class="vertical-3"></div>
+            <div class="footer-options-3">
+                <a href=""><i class="bi bi-facebook"></i></a><br><br>
+                <a href=""><i class="bi bi-instagram"></i></a><br><br>
+                <a href=""><i class="bi bi-twitter"></i></a><br><br>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+        </footer>
+
+    
+<script src="js/home&lifestyle/chairSet.js"></script>    
+</body>
+</html>

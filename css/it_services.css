@@ -1,0 +1,132 @@
+.body{
+    margin: 20px 90px;;
+}
+
+.options{
+    margin-top: 30px;
+}
+
+.options li{
+    list-style: none;
+}
+
+.options ul {
+    display: inline;
+    margin-left: -30px;
+}
+
+.options a{
+    text-decoration: none;
+    color: #62646A;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.options hr{
+    margin-top: 10px;
+}
+
+.options-2{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.submit-btn{
+    width: fit-content;
+    text-align: center;
+    margin: 10px 10px;
+    background-color: #7AE582;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #7AE582;;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    color: #7AE582;
+    background-color: #fff;
+}
+h5{
+    margin-left: 5%;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    overflow-x: hidden;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.product-image{
+    margin-left: 4%;
+    width: 530px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    }
+.product-image:hover{
+    cursor: pointer;
+}
+.product-box{
+    border-radius: 30px;
+    padding: 25px;
+    align-items:center;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px ;
+    transition:all 0.5s ease;
+    border: 1px solid #ebecf0;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.product-box:hover{
+    transform: scale(101%);
+    box-shadow: rgba(0, 250, 0, 0.35) 0px 5px 15px ;
+    background: #fff;
+}
+.product-title{
+    color: #000;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+.free-details{
+    margin: 20px 10px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+
+}
+h3{
+    padding-right: 50px;
+    margin-top: 0;
+}
+.pro{
+    margin-top: 20px;
+    width: 12%;
+    height: 12%;
+    
+}
+.name{
+    margin: 5px 20px;
+}
+.free-image{
+    width:55px;
+    height: 55px;
+}
+.details{
+    width: 70%;
+    margin-left: 5%;
+}
+.rate{
+    margin-left: 5%;
+    display: flex;
+}
+.view-more{
+    margin-left: 5%;
+    font-weight: bold;
+}

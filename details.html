@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/all.css">
+        <link rel="stylesheet" type="text/css" href="css/details.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                 <div class="hamburger-lines">
+                    <i class="bi bi-list"></i>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="main2.html">Home</a></li>
+                    <li><a href="search.html">Explore</a></li> 
+                    <li>
+                        <a href="">How it works</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rent_items.html">Items</a></li>
+                            <li><a href="rent_services.html">Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="myAccount.html">Profile</a></li>
+                    <a href="cart.html">
+                      <i class="bi bi-cart" id="cart-icon"></i>
+                  </a>
+                  </ul>
+                  <img src="Images/Rentiverse logo.png" class="logo">
+           </div>
+      </nav>
+        <h3 class="tagline">Complete Personal Details</h3>
+        <div>
+        <form>
+            <div class="form-optional">
+                <h5 id="form-optional-tag">Having trouble onboarding?</h5>
+                <div id="form-optional-but">?</div>
+            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="lname">New Password:</label>
+            <input type="password" id="lname" name="lname"><br>
+            <label for="lname">Confirm Password:</label>
+            <input type="password" id="lname" name="lname"><br>
+            <label for="acctype">Account Type:</label>
+            <input type="text" id="acctype" name="acctype">
+            <div class="terms">
+                By accepting you agree to our <a href="#">Terms of Service</a>
+            </div>
+            <div class="submit-button">
+                <button id="submit-btn">Save and Continue</button>
+            </div>
+        </form>
+        </div>
+        <footer>
+            <svg viewBox="0 0 120 28">
+             <defs> 
+                 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+              </defs> 
+               <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+               <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+               <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+            </svg>
+            <div class="footer-content">
+                <h1 class="p1">RENTIVERSE</h1>
+                <button class="footer-content-button">Contact Us</button>
+                <div class="vertical-1"></div>
+                <div class="footer-options-1">
+                    <a href=>HOME</a><br><br>
+                    <a href=>EXPLORE</a><br><br>
+                    <a href=>HOW IT WORKS</a><br><br>
+                    <a href=>ABOUT US</a>
+                </div>
+                <div class="vertical-2"></div>
+                <div class="footer-options-2">
+                    <a href=>TERM OF SERVICE</a><br><br>
+                    <a href=>FAQs</a>
+                </div>
+                <div class="vertical-3"></div>
+                <div class="footer-options-3">
+                    <a href=""><i class="bi bi-facebook"></i></a><br><br>
+                    <a href=""><i class="bi bi-instagram"></i></a><br><br>
+                    <a href=""><i class="bi bi-twitter"></i></a><br><br>
+                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            </footer>
+            <script src="js/details.js"></script>
+            <script>
+                var button = document.getElementById("submit-btn");
+
+                // Add a click event listener to the element
+                button.addEventListener("click", function() {
+                    // Redirect to another HTML page
+                    window.location.href = "sharer_verify.html";
+                });
+            </script>
+    </body>
+</html>
